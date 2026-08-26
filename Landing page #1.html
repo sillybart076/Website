@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHEIN Rewards — Get $750</title>
+  <style>
+    :root {
+      --peach: #ffd1b5;
+      --peach-light: #ffdbc4;
+      --red: #f0443f;
+      --red-dark: #df3838;
+      --ink: #151515;
+      --muted: #6f625c;
+      --white: #fffaf7;
+      --shadow: 0 12px 30px rgba(111, 57, 37, .08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--peach-light), var(--peach));
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 34px 20px 80px;
+    }
+
+    .shell {
+      width: min(100%, 520px);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 17px 9px 10px;
+      border-radius: 999px;
+      background: rgba(255, 250, 247, .9);
+      box-shadow: var(--shadow);
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: #171717;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 26px 0 2px;
+      color: var(--red-dark);
+      font-size: clamp(46px, 12vw, 72px);
+      line-height: .94;
+      letter-spacing: -3px;
+      font-weight: 950;
+    }
+
+    h1 sup {
+      top: -.85em;
+      position: relative;
+      font-size: .32em;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 10px 0 0;
+      font-size: clamp(21px, 5vw, 29px);
+      line-height: 1.1;
+      font-weight: 950;
+    }
+
+    .intro {
+      max-width: 350px;
+      margin: 21px auto 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .claim-counter {
+      margin: 34px auto 14px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .claim-counter::before {
+      content: "";
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .cta {
+      width: 100%;
+      display: block;
+      padding: 20px 22px;
+      border: 0;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--red);
+      box-shadow: 0 9px 0 rgba(194, 48, 43, .18), var(--shadow);
+      text-decoration: none;
+      cursor: pointer;
+      font: inherit;
+      font-size: 21px;
+      line-height: 1.1;
+      font-weight: 950;
+      transition: transform .15s ease, filter .15s ease;
+    }
+
+    .cta:hover { filter: brightness(.96); transform: translateY(-2px); }
+    .cta:active { transform: translateY(2px); box-shadow: 0 4px 0 rgba(194, 48, 43, .18); }
+
+    .cta span {
+      display: block;
+      margin-top: 7px;
+      font-size: 14px;
+      font-weight: 700;
+      opacity: .9;
+    }
+
+    .cta.secondary {
+      margin-top: 14px;
+      color: var(--ink);
+      background: var(--white);
+      box-shadow: 0 5px 0 rgba(111, 57, 37, .08), var(--shadow);
+    }
+
+    .fine-print {
+      margin: 24px auto 0;
+      max-width: 390px;
+      color: rgba(21, 21, 21, .58);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 420px) {
+      .page { padding-top: 25px; }
+      h1 { letter-spacing: -2px; }
+      .claim-counter { margin-top: 29px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="shell" aria-labelledby="page-title">
+      <div class="brand" aria-label="SHEIN Rewards">
+        <span class="brand-mark">S</span>
+        <span>SHEIN Rewards</span>
+      </div>
+
+      <h1 id="page-title">Get $750<sup>*</sup></h1>
+      <h2>Towards shopping at SHEIN</h2>
+      <p class="intro">Get up to $750 towards shopping at SHEIN — for dresses, tops, shoes &amp; accessories.</p>
+
+      <div class="claim-counter" aria-live="polite">12,863 shoppers claiming now</div>
+
+      <!-- Both buttons use the editable CTA_URL value below. -->
+      <a class="cta cta-link" href="#" aria-label="Get my $750 — eligible for the full reward">
+        I'm 21 or older
+        <span>Eligible for the full reward</span>
+      </a>
+
+      <a class="cta secondary cta-link" href="#" aria-label="Get my $750 — limited reward eligibility">
+        I'm under 21
+        <span>Limited reward eligibility</span>
+      </a>
+
+      <p class="fine-print">*Reward availability, eligibility, and terms may vary. Please review the offer details on the destination page.</p>
+    </section>
+  </main>
+
+  <script>
+    /*
+      EDIT THIS ONE VALUE to change where every CTA button goes.
+      Example:
+      const CTA_URL = "https://example.com/your-offer?source=landing-page";
+    */
+    const CTA_URL = "https://rewardly-8u.vercel.app/rewards";
+
+    document.querySelectorAll(".cta-link").forEach((button) => {
+      button.href = CTA_URL;
+    });
+  </script>
+</body>
+</html>
+
+<!--
+  Customization:
+  1. Open this file in a text editor.
+  2. Find: const CTA_URL = "...";
+  3. Replace the URL between the quotation marks.
+  4. Save and refresh the page.
+-->
